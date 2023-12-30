@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 400;
+    /* 1.6 * 10 = 16px */
+    font-size: 1.6rem;  
+}
+
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+    margin: 1.6rem 0;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 2.4rem;
+    margin: 1.6rem 0;
+}
+
+p{
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin: 1.6rem 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+section{
+    padding: 50px 0;
+}
+
+
+body{
+    height: 100vh;
+   
+}
+
+/* --------------Header------------------------- */
+
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header .logo h1{
+    font-size: 3.2rem;
+    color: #239696;
+    letter-spacing: 5px;
+    margin: 0;
+    transition: .1s ease-in-out;
+   
+}
+
+header .logo h1:hover{
+    color: whitesmoke;
+    
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 2% 8%;
+    z-index: 100;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+
+header nav ul li a{
+    color: whitesmoke;
+    transition: .1s ease-in-out;
+}
+ 
+header nav ul li a:hover{
+    color:#239696;
+}
+
+header nav box-icon{
+    display: none;
+    cursor: pointer;
+}
+
+/* -----------------------Header-content----------------- */
+.header-content{
+    color: whitesmoke;
+    width: 50%;
+    padding: 20px;
+    position: absolute ;
+    top: 30%;
+    left: 10%;
+    z-index: 99;
+   
+}
+
+.header-content h2{
+    display: inline;
+}
+
+.header-content h2, span{
+    /* letter-spacing: 2px; */
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.header-content p{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.header-content form{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.header-content form input{
+    display: block;
+    width: 50%;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.header-content form input::placeholder{
+    font-size: 1.3rem;
+    color: #adadad;
+}
+
+.header-content form input[type=submit]{
+    font-weight: 500;
+    background-color: #239696;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: .1s ease-in-out;
+}
+
+.header-content form input[type=submit]:hover{
+    color: #239696;
+    background-color:rgba(15, 15, 15,1);
+    border: 1px solid rgb(71, 70, 70);
+}
+
+
+/* investment plan css -------------------------------------------------------------------------------------*/
+ 
+
+.article-section {
+    font-family: Arial, sans-serif;
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 14px;
+    font-size: 28px;
+  }
+  
+  .tab-link {
+    border: none;
+    background: none;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .tab-link.active {
+    border-bottom: 5px solid #c8eaea; ;
+  }
+  
+  .article-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .article {
+    width: 30%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .article img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .article h3 {
+    color: #333;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .date {
+    color: #666;
+    font-size: 20px;
+  }
+  
+  .read-more {
+    background-color:#239696;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  
+ 
+ 
+/* About -1 -------------------------------------------------- */
+
+
+.about-left, .about-middle, .about-right{
+    flex-basis: 30%;
+    padding: 1.6rem;
+    /* background-color: aqua; */
+
+}
+
+.about-left h2, .about-middle h2, .about-right h2{
+    font-weight: 700;
+}
+
+.row .about-middle a , .about-right a{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #239696;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: 0.1s ease-in-out;
+}
+
+.row .about-middle a:hover , 
+.about-right a:hover{
+    color:#239696;
+    background-color:rgba(15, 15, 15,1);
+    border: 1px solid rgb(71, 70, 70);
+}
+
+/* About-2 -------------------------------------------------- */
+.about-2{
+    background-color: #222;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.about-2 .about2-left{
+    flex-basis: 70%;
+}
+
+.about-2 .about2-right{
+    flex-basis: 30%;
+}
+
+.about-2 .about2-left h2{
+    font-weight: 600;
+}
+
+.about-2 .about2-left p{
+    font-weight: 300;
+}
+
+
+.about-2 .card{
+    width: 50%;
+    height: 200px;
+    color: #222;
+    background-color: #dcdcdc;
+    padding: 5rem;
+    margin: 1.6rem;
+    /* border: 1px solid #222; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.about-2 .card:hover{
+    background-color: #222;
+    border: 1px solid white;
+}
+
+.about-2 .card:hover h2{
+   color: whitesmoke;
+}
+
+.about-2 .card h2{
+   font-weight: 600;
+}
+
+/* process--------------------------------------------------- */
+.process{
+    /* background-color: yellow;     */
+}
+
+.process .row{
+      justify-content: center;
+}
+
+.process-content{
+    margin-top: 30px;
+    position: relative;
+    /* background-color: aqua; */
+}
+
+.process .row h2{
+    /* font-weight: 00; */
+    font-size: 3rem;
+}
+
+.progress-bar{
+    width: 80%;
+    height: 2px;
+    background-color: #222;
+    position: relative;
+    margin: auto;
+    z-index: 1
+}
+
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3{
+    width: 20px;
+    height: 20px;
+    background-color: #222;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.progress-bar .c1{
+    top: -8px;
+    left: 40px;
+}
+
+.progress-bar .c2{
+    top: -8px;
+    left: 49%;
+}
+
+.progress-bar .c3{
+    top: -8px;
+    right: 40px;
+}
+
+.box1, .box2, .box3{
+    text-align: center;
+    padding: 0 20px;
+}
+
+.box1 {
+    text-align: left;
+}
+
+.box2 {
+    text-align: center;
+}
+
+.box3 {
+    text-align: right;
+}
+
+.box1 h2, 
+.box2 h2, 
+.box3 h2{
+    color: #239696;
+    font-size: 3rem !important;
+    font-weight: 600;
+}
+
+
+/* testimony------------------------------------------ */
+.testimnoy{
+    background-color: #222 ;
+    color: white;
+}
+
+.testimnoy .test{
+    background-color: #505050;
+    margin: 0 1rem;
+    padding: 4rem 8rem;
+}
+
+.testimnoy .image{
+    width: 80px;
+    height: 80px;
+}
+
+.testimnoy .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimnoy .test .test-content p{
+    font-weight: 300;
+}
+
+
+.testimnoy .test .test-content h2{
+    font-weight: 600;
+}
+
+/* contact------------------------------------- */
+.contact  .row{
+    justify-content: center;
+}
+
+.contact  form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input{
+    display: block;
+    width: 50%;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.contact form textarea{
+    display: block;
+    width: 50%;
+    height: 150px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-family: 'Poppins',  sans-serif;
+    font-size: 1.5rem;
+}
+
+.contact  form input::placeholder
+{
+    font-size: 1.3rem;
+    color: #adadad;
+}
+
+.contact  form textarea::placeholder{
+    font-size: 1.3rem;
+    color: #adadad;
+}
+
+.contact form input[type=submit]{
+    font-weight: 500;
+    background-color: #239696;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: .1s ease-in-out;
+}
+
+.contact form input[type=submit]:hover{
+    color: #239696;
+    background-color:rgba(15, 15, 15,1);
+    border: 1px solid rgb(71, 70, 70);
+}
+
+/* footer------------------------------------ */
+.footer{
+    padding: 0;
+}
+
+.footer p{
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+   text-align: center;
+    background-color: #222;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.footer p span{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #239696;
+}
+
+
+@media only screen and (max-width:760px){
+    /* -----------navbar-------------------------------------- */
+
+    header nav{
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        padding: 20px 0;
+    }
+
+    header  nav ul{
+        background-color: rgba(15, 15, 15,0.9);
+        width: 95%;
+        border-radius: 15px;
+        display: none;
+    }
+
+    header nav ul li{
+        display: block;
+        padding: 20px 0;
+        margin: 0;
+        border-radius: 15px;
+    }
+
+    header nav ul li:hover{
+        background-color: rgba(15, 15, 15,1);
+    }
+
+    header nav ul li a{
+      color: whitesmoke;
+    }
+
+    header nav ul li a:hover{
+        color: #239696;
+      }
+
+      /* ----------navbar icon-------------------------- */
+      header nav box-icon{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* -----------navbar icon toggle---------------------- */
+    .showmenu{
+        display: block;
+    }
+
+    /* -----------------header-content---------------------- */
+    .header-content{
+        width: 100%;
+        top: 15%;
+        left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-content h2{
+        display: block;
+        line-height: 15px
+    }
+
+    .header-content h2, span{
+        /* letter-spacing: 2px; */
+        font-size: 2.5rem;
+    }
+
+    .header-content p{
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+
+    .header-content form{
+        width: 90%;
+        margin-left: auto;
+    }
+
+    .header-content form input{
+        width: 90%;
+        height: 35px;
+    }
+
+    .header-content form input[type=submit]{
+        width: 60%;
+        margin-left: 17%;
+    }
+
+    /* About -1 -------------------------------------------------- */
+
+    .row{
+        flex-direction: column;
+    }
+
+    .about-left h2, .about-middle h2, .about-right h2{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .row .about-middle p , .about-right p{
+        font-size: 1.5rem;
+    }
+
+    .row .about-middle a , .about-right a{
+        padding: 8px 15px;
+    }
+
+    /* About -2 -------------------------------------------------- */
+    .about-2{
+        text-align: center;
+    }
+    .about-2 .about2-left{
+        flex-basis: 100%;
+    }
+
+    .about-2 .about2-right{
+        flex-basis: 100%;
+    }
+
+    .about-2 .about2-left h2{
+        font-weight: 500;
+    }
+
+    .about-2 .about2-left p{
+        font-size: 1.5rem;
+    }
+
+    .about2-right .row{
+        flex-direction: row;
+    }
+
+    .about-2 .card{
+        width: 40%;
+        height: 150px;
+    }
+
+    .about-2 .card h2{
+        font-size: 1.5rem;
+    }
+
+        /* process-------------------------- */
+    .process-content{
+        display: flex ;
+        flex-direction: row;
+    }
+
+    .process .row h2{
+        /* font-weight: 00; */
+        font-size: 2.5rem;
+    }
+
+    .process-content .progress-bar{
+        transform: rotate(90deg);
+        position: absolute;
+        width: 120% !important;
+        top: 48%; 
+        left: -60%;
+    }
+
+    .progress-bar .c1{
+        top: -8px;
+        left: 35px;
+    }
+    
+    .progress-bar .c2{
+        top: -8px;
+        left: 41%;
+    }
+    
+    .progress-bar .c3{
+        top: -8px;
+        right: 100px;
+    }
+
+    .box1, .box2, .box3 {
+        text-align: left;
+        padding: 0 10px;
+    }
+
+
+    .box1 h2, 
+    .box2 h2, 
+    .box3 h2{
+        font-weight: 600;
+        font-size: 2.5rem !important;
+    }
+
+
+    .box1 p, 
+    .box2 p, 
+    .box3 p{
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .process-content .row{
+        flex-direction: column;
+    }
+
+    /* testimny--------------------- */
+    
+    .testimnoy .row{
+        flex-direction: column;
+    }
+
+    .testimnoy .test{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    /* contact---------------------------- */
+
+    /* Contact Section Styles */
+.contact {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for form inputs and textarea */
+.contact form input,
+.contact form textarea {
+    width: 90%; /* Uniform width for all input fields and textarea */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Style for the submit button */
+.contact .btn {
+    background-color: #239696;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90%; /* To align with the width of input fields */
+}
+
+.contact .btn:hover {
+    background-color:#239696;
+}
+
+/* Menu Styles */
+ul {
+    list-style-type: none; /* Removes default list style */
+    /* Additional menu styles can go here */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    /* Additional link styles can go here */
+}
+
+ul li a:hover {
+    color: #239696; /* Hover effect for links */
+}
+} 

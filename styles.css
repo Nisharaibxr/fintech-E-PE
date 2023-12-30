@@ -1,0 +1,64 @@
+.article-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 40px auto;
+    background: #c8eaea; /* Assuming a white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+.article-page-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Space between title and image */
+    border-radius: 5px;
+}
+
+.article-page-container h1 {
+    font-size: 40px; /* As specified */
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.article-page-container h2 {
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.article-page-container .date {
+    color: #464545;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+article p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+ 
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .article-page-container {
+        padding: 15px;
+    }
+
+    .article-page-container h1 {
+        font-size: 32px; /* Slightly smaller for mobile */
+    }
+
+    .article-page-container h2 {
+        font-size: 18px;
+    }
+
+    article p {
+        font-size: 16px;
+    }
+}
